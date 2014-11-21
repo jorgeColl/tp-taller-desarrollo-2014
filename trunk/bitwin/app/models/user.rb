@@ -11,6 +11,5 @@ class User < ActiveRecord::Base
   def fieldsToLower
    	self.nickname.downcase!
    	self.mail.downcase!
-
   end
 end
