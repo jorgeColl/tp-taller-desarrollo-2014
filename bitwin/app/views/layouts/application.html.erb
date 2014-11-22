@@ -9,8 +9,9 @@
 <body>
 	<% if loggedIn? %>
 	    Logeado como <%= currentUser.nickname %>
-
-	</br>
+		</br>
+	    <%= link_to "Log out", logout_path, method: "delete" %>
+		</br>
      	<%= link_to "Profile", currentUser %>
 	<% else %>
 	    <%= link_to "Log in", login_path %>
