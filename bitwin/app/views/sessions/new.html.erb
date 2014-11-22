@@ -1,0 +1,13 @@
+Login
+<%= form_for(:session, url: login_path) do |f| %>
+
+<%= f.label :nickname, "Nombre de usuario:" %>
+<%= f.text_field :nickname %>
+</br>
+<%= f.label :password, "contrasena" %>
+<%= f.password_field :password %>
+</br>
+<%= f.submit "Ingresar" %>
+<% end %>
+
+<p>nuevo usuario? <%= link_to "Registrate!", new_user_path %></p>

@@ -5,22 +5,27 @@ class UsersController < ApplicationController
   end
 
   def new
-    @user = User.new
+    if loggedIn? 
+     redirect_to currentUser 
+    else
+     @user = User.new
+    end
   end
-def create
-	@user = User.new(user_params)
-	@user.coins = 0
-	if @user.save
-      redirect_to @user
-	else
-	  render 'new'
-	end
-end
+  def create
+  	@user = User.new(user_params)
+  	@user.coins = 0
+  	if @user.save
+        login @user
+        redirect_to @user
+  	else
+  	  render 'new'
+  	end
+  end
 
-private
+  private
 
-def user_params
-  params.require(:user).permit(:nickname, :mail, :password,
-                               :password_confirmation, :walletNmb)
-end
+  def user_params
+    params.require(:user).permit(:nickname, :mail, :password,
+                                 :password_confirmation, :walletNmb)
+  end
 end
