@@ -11,7 +11,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141121183613) do
+ActiveRecord::Schema.define(version: 20141123221924) do
+
+  create_table "gambles", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "firstChosen"
+    t.integer  "secondChosen"
+    t.integer  "thirdChosen"
+    t.integer  "fourthChosen"
+    t.integer  "fifthChosen"
+    t.integer  "firstRaffled"
+    t.integer  "secondRaffled"
+    t.integer  "thirdRaffled"
+    t.integer  "fourthRaffled"
+    t.integer  "fifthRaffled"
+    t.integer  "cost"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "gambles", ["user_id"], name: "index_gambles_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "nickname"

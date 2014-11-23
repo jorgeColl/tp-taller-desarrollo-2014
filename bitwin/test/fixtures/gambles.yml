@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 
+  firstChosen: 1
+  secondChosen: 1
+  thirdChosen: 1
+  fourthChosen: 1
+  fifthChosen: 1
+  firstRaffled: 1
+  secondRaffled: 1
+  thirdRaffled: 1
+  fourthRaffled: 1
+  fifthRaffled: 1
+  cost: 1
+
+two:
+  user_id: 
+  firstChosen: 1
+  secondChosen: 1
+  thirdChosen: 1
+  fourthChosen: 1
+  fifthChosen: 1
+  firstRaffled: 1
+  secondRaffled: 1
+  thirdRaffled: 1
+  fourthRaffled: 1
+  fifthRaffled: 1
+  cost: 1

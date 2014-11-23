@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   #basado en ejemplos de https://www.railstutorial.org/
+  has_many :gambles
   before_save :fieldsToLower
 
   validates :nickname,  presence: true, length: { maximum: 25 }, uniqueness: { case_sensitive: false }
