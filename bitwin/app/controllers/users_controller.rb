@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   #basado en ejemplos de https://www.railstutorial.org/
-  before_action :loggedInUser, only: [:show]
-  before_action :correctUser,   only: [:show]
+  before_action :loggedInUser, only: [:show, :destroy]
+  before_action :correctUser,   only: [:show, :destroy]
 
   def show
     @user = User.find(params[:id])
@@ -25,6 +25,10 @@ class UsersController < ApplicationController
   	end
   end
 
+ def destroy
+    User.find(params[:id]).destroy
+    redirect_to root_url
+  end
   private
 
   def user_params
@@ -36,8 +40,9 @@ class UsersController < ApplicationController
       redirect_to login_url
     end
   end
+
   def correctUser
-    @user = User.find(params[:id])
-    redirect_to(root_url) unless @user == currentUser
+    @user = User.find_by(id: params[:id])
+    redirect_to(root_url) unless currentUser?(@user)
   end
 end
