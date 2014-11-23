@@ -4,3 +4,6 @@ nombre de usuario:  <%= @user.nickname %> </br>
 mail:  <%= @user.mail %> </br>
 wallet number:  <%= @user.walletNmb %> </br>
 coins:  <%= @user.coins %> 
+
+<%= link_to "Eliminar cuenta", @user, method: :delete,
+                                  data: { confirm: "Esta seguro? esta acccion no podra deshacerse" } %>
