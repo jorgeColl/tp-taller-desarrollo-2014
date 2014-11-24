@@ -1,0 +1,24 @@
+This is the new gamble form 
+
+<%= form_for [@gamble.user, @gamble] do |f| %>
+  <%= @user.nickname %> </br>
+  <%= f.label :firstChosen, "Elija el primer numero" %>
+  <%= f.text_field :firstChosen %>
+  </br>
+  <%= f.label :secondChosen, "Elija el segundo numero" %>
+  <%= f.text_field :secondChosen %>
+  </br>
+  <%= f.label :thirdChosen, "Elija el tercer numero" %>
+  <%= f.text_field :thirdChosen %>
+  </br>
+  <%= f.label :fourthChosen, "Elija el cuarto numero" %>
+  <%= f.text_field :fourthChosen %>
+  </br>
+  <%= f.label :fifthChosen, "Elija el quiento numero" %>
+  <%= f.text_field :fifthChosen %>
+  </br>
+  Costo de la apuesta = 
+  <%= f.label :cost, "15" %> btc
+  </br>
+  <%= f.submit "Jugar ya!" %>
+<% end %>
