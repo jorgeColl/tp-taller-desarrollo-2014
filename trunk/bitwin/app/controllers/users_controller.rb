@@ -35,11 +35,7 @@ class UsersController < ApplicationController
     params.require(:user).permit(:nickname, :mail, :password,
                                  :password_confirmation, :walletNmb)
   end
-  def loggedInUser
-    unless loggedIn?
-      redirect_to login_url
-    end
-  end
+
 
   def correctUser
     @user = User.find_by(id: params[:id])
