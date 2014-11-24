@@ -1,5 +1,8 @@
 class GamblesController < ApplicationController
 	#basado en ejemplos de https://www.railstutorial.org/
+  before_action :loggedInUser
+  before_action :correctUser
+
 	def index
 		@user = User.find_by(id: params[:user_id])
 		if @user
@@ -30,9 +33,16 @@ class GamblesController < ApplicationController
 		@user = User.find(params[:user_id])
     @gamble = @user.gambles.find(params[:id])
  	end
+
   private
+  
   def gamble_params
     params.require(:gamble).permit(:firstChosen, :secondChosen, :thirdChosen,
                                  :fourthChosen, :fifthChosen)
+  end
+
+  def correctUser
+    @user = User.find_by(id: params[:user_id])
+    redirect_to(root_url) unless currentUser?(@user)
   end
 end
