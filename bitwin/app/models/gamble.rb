@@ -10,6 +10,22 @@ class Gamble < ActiveRecord::Base
   validates :fourthChosen, presence: true, :inclusion => 0..99
   validates :fifthChosen, presence: true, :inclusion => 0..99
   validates :cost, presence: true,  :numericality => { :greater_than_or_equal_to => 0}
+  validate :numbersAreUnique
+
+  def numbersAreUnique
+    chosenNumbers = [ self.firstChosen, self.secondChosen, self.thirdChosen, self.fourthChosen, self.fifthChosen]
+    errorsFound = false
+    for i in 0..4
+      for j in i..4
+          if i != j and chosenNumbers[i] == chosenNumbers[j]
+            errorsFound = true
+          end
+      end
+    end
+    if errorsFound 
+      errors.add(:firstChosen, "Los numeros ingresados deben ser diferentes") 
+    end
+  end
 
   def initializeFields
     self.cost = 15
