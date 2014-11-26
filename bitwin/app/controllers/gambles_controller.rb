@@ -23,6 +23,7 @@ class GamblesController < ApplicationController
       @gamble.thirdRaffled = raffledNumbers[2]
       @gamble.fourthRaffled = raffledNumbers[3]
       @gamble.fifthRaffled = raffledNumbers[4]
+      @gamble.profit = calculateProfit(@gamble)
       if @gamble.save
     		redirect_to([@gamble.user, @gamble])
     	else
@@ -35,11 +36,26 @@ class GamblesController < ApplicationController
  	end
 
   private
+  def calculateProfit(gamble)
+    correctCount = 0
+    chosenNumbers = [ gamble.firstChosen, gamble.secondChosen, gamble.thirdChosen, gamble.fourthChosen, gamble.fifthChosen ]
+    raffledNumbers = [ gamble.firstRaffled, gamble.secondRaffled, gamble.thirdRaffled, gamble.fourthRaffled, gamble.fifthRaffled ]
+    for i in 0..4
+      for j in 0..4
+          #i know there are no equal numbers on each array
+          if chosenNumbers[i] == raffledNumbers[j]
+            correctCount = correctCount + 1
+          end
+      end
+    end
+    correctCount
+  end
+
   def generateRaffledNumbers()
     numbersAreDifferent = false
     while (!numbersAreDifferent) do 
       numbersAreDifferent = true
-      raffledNumbers = [ rand(99), rand(99), rand(99), rand(99), rand(99) ]
+      raffledNumbers = [ rand(100), rand(100), rand(100), rand(100), rand(100) ]
       for i in 0..4
         for j in i..4
             if i != j and raffledNumbers[i] == raffledNumbers[j]

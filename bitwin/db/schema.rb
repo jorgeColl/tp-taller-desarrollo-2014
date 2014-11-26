@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141123223240) do
+ActiveRecord::Schema.define(version: 20141126021159) do
 
   create_table "gambles", force: true do |t|
     t.integer  "user_id"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20141123223240) do
     t.integer  "cost"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "profit"
   end
 
   add_index "gambles", ["user_id"], name: "index_gambles_on_user_id"
