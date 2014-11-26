@@ -17,13 +17,13 @@ class GamblesController < ApplicationController
     	@user = User.find_by(id: params[:user_id])
      	@gamble = @user.gambles.create(gamble_params)
      	@gamble.cost = 0
-      @gamble.firstRaffled = 99
-      @gamble.secondRaffled = 98
-      @gamble.thirdRaffled = 97
-      @gamble.fourthRaffled = 96
-      @gamble.fifthRaffled = 95
-      
-     	if @gamble.save
+      raffledNumbers = generateRaffledNumbers
+     	@gamble.firstRaffled = raffledNumbers[0]
+      @gamble.secondRaffled = raffledNumbers[1]
+      @gamble.thirdRaffled = raffledNumbers[2]
+      @gamble.fourthRaffled = raffledNumbers[3]
+      @gamble.fifthRaffled = raffledNumbers[4]
+      if @gamble.save
     		redirect_to([@gamble.user, @gamble])
     	else
   	  		render 'new'
@@ -35,7 +35,21 @@ class GamblesController < ApplicationController
  	end
 
   private
-  
+  def generateRaffledNumbers()
+    numbersAreDifferent = false
+    while (!numbersAreDifferent) do 
+      numbersAreDifferent = true
+      raffledNumbers = [ rand(99), rand(99), rand(99), rand(99), rand(99) ]
+      for i in 0..4
+        for j in i..4
+            if i != j and raffledNumbers[i] == raffledNumbers[j]
+              numbersAreDifferent = false
+            end
+        end
+      end
+    end
+    raffledNumbers
+  end
   def gamble_params
     params.require(:gamble).permit(:firstChosen, :secondChosen, :thirdChosen,
                                  :fourthChosen, :fifthChosen)
