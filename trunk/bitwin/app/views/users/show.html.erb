@@ -1,9 +1,51 @@
-<h3>Perfil </h3>
 
-nombre de usuario:  <%= @user.nickname %> </br>
-mail:  <%= @user.mail %> </br>
-wallet number:  <%= @user.walletNmb %> </br>
-coins:  <%= @user.coins %> 
-
-<%= link_to "Eliminar cuenta", @user, method: :delete,
-                                  data: { confirm: "Esta seguro? esta acccion no podra deshacerse" } %>
+<div class="row" style="padding-left: 20px;">
+	<div class="col-md-4">
+		<div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Configuration</h3>
+      </div>
+      <div class="panel-body">
+      	<div class="row">
+      		<div class="col-md-2">
+      			<strong>NickName: </strong>
+      		</div>
+      		<div class="col-md-4">
+      			<%= @user.nickname %>
+      		</div>
+      	</div>
+      	<div class="row">
+      		<div class="col-md-2">
+      			<strong>E-mail: </strong>
+      		</div>
+      		<div class="col-md-4">
+      			<%= @user.mail %>
+      		</div>
+      	</div>
+      	<div class="row">
+      		<div class="col-md-2">
+      			<strong>Wallet:</strong>
+      		</div>
+      		<div class="col-md-4">
+      			<%= @user.walletNmb %> 
+      		</div>
+      	</div>
+      	<div class="row">
+	      	<div class="col-md-2">
+	      		<strong>Coins: </strong>
+	      	</div>
+	      	<div class="col-md-4">
+	      		<%= @user.coins %> 
+	      	</div>
+      	</div>
+      	<div class="row" style="padding-top:10px">
+      		<div class="col-md-4">
+      			<a class="btn btn-danger" href="/users/<%= @user.id %>" rel="nofollow" data-method="delete" data-confirm="Esta Seguro de elimar la cuenta?">Delete</a>
+      		</div>
+      	</div>	
+       
+      </div>
+    </div>
+	
+	</div>
+</div>

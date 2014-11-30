@@ -3,14 +3,13 @@ class SessionsController < ApplicationController
 
   def new
   end
+  
   def create
     user = User.find_by(nickname: params[:session][:nickname].downcase)
     if user && user.authenticate(params[:session][:password])
-   	  login user
-      redirect_to user
-    else
-      render 'new'
+   	  login user     
     end
+     redirect_to root_path
   end
 
   def destroy
