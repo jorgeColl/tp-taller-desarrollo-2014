@@ -4,16 +4,21 @@ class UsersController < ApplicationController
   before_action :correctUser,   only: [:show, :destroy]
 
   def show
-    @user = User.find(params[:id])
+    if loggedIn? 
+      @user = User.find(params[:id])
+    else
+      redirect_to root_path
+    end
   end
 
   def new
     if loggedIn? 
      redirect_to currentUser 
     else
-     @user = User.new
+     @user = User.new   
     end
   end
+
   def create
   	@user = User.new(user_params)
   	@user.coins = 0
