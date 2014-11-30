@@ -73179,3 +73179,1635 @@ Completed 200 OK in 332ms (Views: 331.2ms | ActiveRecord: 0.4ms)
 
 
 Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-30 18:40:55 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 18:44:25 -0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+Completed 200 OK in 344ms (Views: 342.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/css_for_bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/gambles.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/shopping.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/shopping.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/gambles.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-30 18:44:26 -0300
+
+
+Started GET "/users/3" for 127.0.0.1 at 2014-11-30 18:44:32 -0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 359ms (Views: 350.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/3/gambles" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+Processing by GamblesController#index as HTML
+  Parameters: {"user_id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mGamble Load (7.9ms)[0m  [1mSELECT "gambles".* FROM "gambles"  WHERE "gambles"."user_id" = ?  ORDER BY created_at DESC[0m  [["user_id", 3]]
+  Rendered collection (0.0ms)
+  Rendered gambles/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 726ms (Views: 343.3ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/assets/css_for_bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/gambles.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/shopping.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:43 -0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:44 -0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:44 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:44 -0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:44 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:44 -0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:44 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:44 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:44 -0300
+
+
+Started GET "/assets/shopping.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:44 -0300
+
+
+Started GET "/assets/gambles.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:44 -0300
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:44 -0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:44 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:44 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 18:44:44 -0300
+
+
+Started GET "/users/3/gambles/new" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+Processing by GamblesController#new as HTML
+  Parameters: {"user_id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+  Rendered gambles/new.html.erb within layouts/application (187.5ms)
+Completed 200 OK in 587ms (Views: 532.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/css_for_bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/gambles.css?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/shopping.css?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:02 -0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:03 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:03 -0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:03 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:03 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:03 -0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:03 -0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:03 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:03 -0300
+
+
+Started GET "/assets/gambles.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:03 -0300
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:03 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:03 -0300
+
+
+Started GET "/assets/shopping.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:03 -0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:03 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-30 18:45:03 -0300
+
+
+Started GET "/users/3/gambles" for 127.0.0.1 at 2014-11-30 18:46:38 -0300
+Processing by GamblesController#index as HTML
+  Parameters: {"user_id"=>"3"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mGamble Load (0.3ms)[0m  SELECT "gambles".* FROM "gambles"  WHERE "gambles"."user_id" = ?  ORDER BY created_at DESC  [["user_id", 3]]
+  Rendered collection (0.0ms)
+  Rendered gambles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 401ms (Views: 373.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/css_for_bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 18:46:38 -0300
+
+
+Started GET "/assets/gambles.css?body=1" for 127.0.0.1 at 2014-11-30 18:46:38 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-30 18:46:38 -0300
+
+
+Started GET "/assets/shopping.css?body=1" for 127.0.0.1 at 2014-11-30 18:46:38 -0300
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-11-30 18:46:38 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-30 18:46:38 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 18:46:38 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/shopping.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/gambles.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-30 18:46:39 -0300
+
+
+Started GET "/users/3/gambles" for 127.0.0.1 at 2014-11-30 18:46:41 -0300
+Processing by GamblesController#index as HTML
+  Parameters: {"user_id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+  [1m[35mGamble Load (0.2ms)[0m  SELECT "gambles".* FROM "gambles"  WHERE "gambles"."user_id" = ?  ORDER BY created_at DESC  [["user_id", 3]]
+  Rendered collection (0.0ms)
+  Rendered gambles/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 357ms (Views: 352.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/lot" for 127.0.0.1 at 2014-11-30 18:48:48 -0300
+
+ActionController::RoutingError (No route matches [GET] "/lot"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.2ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+Completed 200 OK in 361ms (Views: 359.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/css_for_bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/gambles.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/shopping.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/gambles.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/shopping.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:02 -0300
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-30 18:50:03 -0300
+
+
+Started GET "/lottery_selection" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+Processing by StaticPagesController#lottery_selection as HTML
+  Rendered static_pages/lottery_selection.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+Completed 200 OK in 342ms (Views: 341.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/css_for_bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/shopping.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/gambles.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:21 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:22 -0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:22 -0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:22 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:22 -0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:22 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:22 -0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:22 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:22 -0300
+
+
+Started GET "/assets/gambles.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:22 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:22 -0300
+
+
+Started GET "/assets/shopping.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:22 -0300
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:22 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:22 -0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:22 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-30 18:50:22 -0300
+
+
+Started GET "/butCoins" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+Processing by StaticPagesController#buyCoins as HTML
+  Rendered static_pages/buyCoins.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+Completed 200 OK in 346ms (Views: 343.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/css_for_bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/gambles.css?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/shopping.css?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/shopping.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/gambles.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-30 18:54:04 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 18:55:51 -0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+Completed 200 OK in 361ms (Views: 359.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/css_for_bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 18:55:51 -0300
+
+
+Started GET "/assets/gambles.css?body=1" for 127.0.0.1 at 2014-11-30 18:55:51 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-30 18:55:51 -0300
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-11-30 18:55:51 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-30 18:55:51 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-30 18:55:51 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 18:55:51 -0300
+
+
+Started GET "/assets/shopping.css?body=1" for 127.0.0.1 at 2014-11-30 18:55:51 -0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:51 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:51 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:51 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/gambles.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/shopping.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-30 18:55:52 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 18:55:55 -0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+Completed 200 OK in 349ms (Views: 347.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/css_for_bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:00 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:00 -0300
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:00 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:00 -0300
+
+
+Started GET "/assets/shopping.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:00 -0300
+
+
+Started GET "/assets/gambles.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:00 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:00 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:00 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+Completed 200 OK in 357ms (Views: 355.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/css_for_bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/gambles.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/shopping.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/shopping.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:14 -0300
+
+
+Started GET "/assets/gambles.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:15 -0300
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:15 -0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:15 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:15 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:15 -0300
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-30 18:56:15 -0300
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 18:56:17 -0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+Completed 200 OK in 381ms (Views: 379.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-30 18:56:52 -0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+Completed 200 OK in 358ms (Views: 356.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/css_for_bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:52 -0300
+
+
+Started GET "/assets/gambles.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:52 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:52 -0300
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:52 -0300
+
+
+Started GET "/assets/shopping.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:52 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:52 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:52 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/gambles.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/shopping.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-30 18:56:53 -0300
+
+
+Started GET "/buyCoins" for 127.0.0.1 at 2014-11-30 18:56:55 -0300
+
+ActionController::RoutingError (No route matches [GET] "/buyCoins"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.0ms)
+
+
+Started GET "/buyCoins" for 127.0.0.1 at 2014-11-30 18:56:55 -0300
+
+ActionController::RoutingError (No route matches [GET] "/buyCoins"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.1ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.7ms)
+
+
+Started GET "/buyCoins" for 127.0.0.1 at 2014-11-30 18:56:58 -0300
+
+ActionController::RoutingError (No route matches [GET] "/buyCoins"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.1ms)
+
+
+Started GET "/buyCoin" for 127.0.0.1 at 2014-11-30 18:57:01 -0300
+
+ActionController::RoutingError (No route matches [GET] "/buyCoin"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (39.0ms)
+
+
+Started GET "/buyCoin" for 127.0.0.1 at 2014-11-30 18:57:22 -0300
+
+ActionController::RoutingError (No route matches [GET] "/buyCoin"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.7ms)
+
+
+Started GET "/buyCoin" for 127.0.0.1 at 2014-11-30 18:57:23 -0300
+
+ActionController::RoutingError (No route matches [GET] "/buyCoin"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/nicolas/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.4ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /home/nicolas/.rvm/gems/ruby-2.1.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (40.4ms)
+
+
+Started GET "/buyCoins" for 127.0.0.1 at 2014-11-30 18:57:26 -0300
+Processing by StaticPagesController#buyCoins as HTML
+  Rendered static_pages/buyCoins.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+Completed 200 OK in 363ms (Views: 360.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/css_for_bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/shopping.css?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/gambles.css?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/gambles.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/shopping.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-30 18:57:27 -0300
+
+
+Started GET "/buyCoins" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+Processing by StaticPagesController#buyCoins as HTML
+  Rendered static_pages/buyCoins.html.erb within layouts/application (2.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+Completed 200 OK in 340ms (Views: 338.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/css_for_bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/gambles.css?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/shopping.css?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/gambles.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/shopping.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-30 19:00:10 -0300
+
+
+Started GET "/buyCoins" for 127.0.0.1 at 2014-11-30 19:01:02 -0300
+Processing by StaticPagesController#buyCoins as HTML
+  Rendered static_pages/buyCoins.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+Completed 200 OK in 338ms (Views: 336.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/gambles.css?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/shoppings.css?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/shopping.css?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/css_for_bootstrap.css?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/gambles.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/shopping.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/shoppings.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-30 19:01:03 -0300
