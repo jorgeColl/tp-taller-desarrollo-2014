@@ -98,11 +98,11 @@
         <h4 class="modal-title" id="myModalLabel">Registrate....</h4>
       </div>
       <div id="modalSingIn" class="modal-body">
-        <%= form_for(:users , url: "/users/login", method: "post") do |f| %>
+        <%= form_for(:session , url: "/login", method: "post") do |f| %>
 					<div class="row marginTop">
 						<div class="col-md-6">
-		      		<%= f.label :email %>
-		      		<%= f.text_field :email, class: 'form-control' %>
+		      		<%= f.label :nickname %>
+		      		<%= f.text_field :nickname, class: 'form-control' %>
 						</div>
 					</div>
 					<div class="row marginTop">
