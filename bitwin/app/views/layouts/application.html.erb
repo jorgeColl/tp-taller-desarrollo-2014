@@ -53,7 +53,7 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class=" colorNavar collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav">
-		    <li><a href="/about">About us</a>
+		    <li><a href="/about">Acerca de Nosotros</a>
 		    </li>
 		   </ul>      
 		  
@@ -63,7 +63,8 @@
 			    <li class="dropdown">
 			      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><%= currentUser.nickname %><span class="caret"></span></a>
 			      <ul class="dropdown-menu" role="menu">
-			        <li><a href=""><%= link_to "Configuration", currentUser %></a></li>			
+			        <li><a href=""><%= link_to "Configuracion", currentUser %></a></li>		
+			        <li><a href="/users/<%= currentUser.id %>/gambles">Apuestas</a></li>	  	
 			         <li><a href="/buyCoins">Comprar fichas</a></li>	      	
 			        <li class="divider"></li>
 			        <li><a href="#"><%= link_to "Log out", logout_path, method: "delete" %></a></li>

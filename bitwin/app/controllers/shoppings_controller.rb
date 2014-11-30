@@ -2,7 +2,8 @@ class ShoppingsController < ApplicationController
   #basado en ejemplos de https://www.railstutorial.org/
   before_action :loggedInUser
   before_action :correctUser
-	def index
+	
+  def index
 		@user = User.find_by(id: params[:user_id])
 		if @user
 			@shoppings = @user.shoppings
