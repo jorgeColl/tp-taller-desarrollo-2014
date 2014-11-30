@@ -1,0 +1,10 @@
+<h1>Shoppings#new</h1>
+
+This is the shopping coins form 
+
+<%= form_for [@shopping.user, @shopping] do |f| %>
+
+  <%= f.label :amount, "Cantidad de fichas a comprar:" %>
+  <%= f.text_field :amount %>
+  <%= f.submit "Comprar!" %>
+<% end %>
