@@ -10,19 +10,26 @@ class ShoppingsController < ApplicationController
 	end
  	def new
      	@user = User.find_by(id: params[:user_id])
-     	@shopping = @user.shoppings.build
+      if @user
+        @shoppingsAll = @user.shoppings
+      end
+     	@shopping = @user.shoppings.build 
+
 	end
+
   def create
   	@user = User.find_by(id: params[:user_id])
    	@shopping = @user.shoppings.create(shopping_params)
    	if @shopping.save
         coins = @user.coins + @shopping.amount
         @user.update_attribute('coins',coins)
-  	   	redirect_to user_shoppings_path
-    	else
+  	   	#redirect_to user_shoppings_path
+    	 redirect_to new_user_shopping_path
+      else
 	  		render 'new'
 		end
  	end
+
  	def show
  	end
 

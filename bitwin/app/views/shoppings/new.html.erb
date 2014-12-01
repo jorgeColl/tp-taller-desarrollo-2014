@@ -1,10 +1,101 @@
-<h1>Shoppings#new</h1>
+<style type="text/css">
 
-This is the shopping coins form 
+.nav-tabs {
+	border-bottom: 0px;
+}
+.affix , .affix-top{
+	width: 350px;
+}
+</style>
+<body data-spy="scroll" data-target="#myScrollspy">
 
-<%= form_for [@shopping.user, @shopping] do |f| %>
+<div class="row clearfix" style="padding-left:10px;">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+				<div class="col-md-9 column">
+					<div class="jumbotron" style="border-radius: 10px">
+						<h1>
+							Compra de Fichas
+						</h1>
+						<p>
+							Debido a las caracteristicas del Bitcoin nosotros no podemos procesar directamente el cobro sobre su wallet, por lo que para realizar la compra de fichas debera enviar bitcoins a nuestra clave publica:
+						</p>
+						<p>
+							<span>AF8VA-ASD7V-AD8FV-81YZX</span>
+						</p>
+						<p>
+							Luego de realizar el envio y en un plazo de no mas de 10 minutos se acreditará de forma automatica la cantidad de fichas en su cuenta correspondiente al monto en bicoins ingresado.
+						</p>
+						<p>
+							1 Ficha = 0.001 Bitcoin
+						</p>
+						<p>
+							Recuerde tener actualizada los datos de su cuenta (incluyendo su clave publica) para que la transaccion se realize de forma correcta.
+						</p>
+						<p>
+							<a class="btn btn-primary btn-large" href="#">Mas informacion aceca de transacciones Bitcoin</a>
+						</p>
+						<br><br>
+						<div class="row">
 
-  <%= f.label :amount, "Cantidad de fichas a comprar:" %>
-  <%= f.text_field :amount %>
-  <%= f.submit "Comprar!" %>
-<% end %>
+							<%= form_for [@shopping.user, @shopping] do |f| %>
+							  <div class="col-md-2">
+								  <%= f.label :amount, "Cantidad de fichas comprar:" %>
+								 </div>
+								<div class="col-md-4">
+								  <%= f.text_field :amount, class: 'form-control'%>
+								</div>
+								<div class="col-md-3">
+								  <%= f.submit "Comprar!", class: 'btn btn-success' %>
+							 	</div>
+							<% end %>
+						</div>
+					</div>
+				</div>	
+				<div class="col-md-2" id="myScrollspy">
+            <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
+              <div class="alert alert-success" role="alert">
+							 <h4><strong>Usted Posse:</strong> <%= currentUser.coins %> fichas!!!<h4>
+							</div>
+            </ul>
+        </div>  
+        <div class="col-md-1">
+        </div>   
+   					
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row" style="padding-left:20px">
+
+	<div class="col-md-6">
+		
+		<div class="row" style="color:white">
+			<div class="col-md-5">
+				<h1>Historial de compras!</h1>
+			</div>			
+		</div>	
+		<div class="panel">
+			<table class="table table-bordered  table-condensed ">
+				<thead style="background: darkgray">
+					<th>Fecha</th>
+					<th>Cantidad</th>
+				</thead>
+				  <tbdoy>
+			  	<% @shoppingsAll.each do |shopping| %>
+				  		<tr>				  		
+							  <td>
+							  	<%= shopping.created_at %> 
+							  </td>
+							  <td>
+							  	<%= shopping.amount %>								  
+								</td>
+				  		</tr>				  		
+			  	<% end %>
+			  	</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
