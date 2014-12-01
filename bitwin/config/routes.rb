@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get 'sessions/new'
 
   root 'static_pages#home'
+  get 'lottery_selection' => 'static_pages#lottery_selection'    
+  get 'buyCoins' => 'static_pages#buyCoins'
   get 'help'    => 'static_pages#help'
   get 'error'    => 'static_pages#noCoins'
   get 'about'   => 'static_pages#about'
