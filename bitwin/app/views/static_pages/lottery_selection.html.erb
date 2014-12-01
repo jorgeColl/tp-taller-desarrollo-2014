@@ -27,7 +27,7 @@
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 	width: 327px;
-	height: 275px; 
+	height: 325px; 
 }
 
 .jumbotron{
@@ -63,6 +63,9 @@
 										Loteria Gold
 									</h3>
 									<p>
+										<a class="btn btn-primary" href="#" data-toggle="modal" data-target="#aModal" onclick="changeModalDefault()">Más informacíon</a> <a class="btn" href="#"> </a>
+									</p>
+									<p>
 										<a class="btn btn-primary" href="/users/<%= currentUser.id %>/gambles/new">Jugar</a> <a class="btn" href="#"> </a>
 									</p>
 								</div>
@@ -75,6 +78,9 @@
 									<h3>
 										Loteria Silver
 									</h3>
+									<p>
+										<a class="btn btn-primary" href="#">Más informacíon</a> <a class="btn" href="#"> </a>
+									</p>
 									<p>
 										<a class="btn btn-primary" href="#">Jugar</a> <a class="btn" href="#"> </a>
 									</p>
@@ -89,7 +95,10 @@
 										Loteria Bronze
 									</h3>
 									<p>
-										<a class="btn btn-primary" href="#">Jugar!</a> <a class="btn" href="#"> </a>
+										<a class="btn btn-primary" href="#">Más informacíon</a> <a class="btn" href="#"> </a>
+									</p>
+									<p>
+										<a class="btn btn-primary" href="#">Jugar</a> <a class="btn" href="#"> </a>
 									</p>
 								</div>
 							</div>
@@ -146,3 +155,40 @@
 		</div>
 	</div>	
 </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="aModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 style="color: DarkGoldenRod" class="modal-title" id="myModalLabel">Loteria Gold</h4>
+      </div>
+      <div id="modalRules" class="modal-body">
+        <p>
+        	- Se deben elegir 6 numeros entre 0 y 99. No pueden haber nùmeros repetidos.
+        </p>
+        <p>
+        	- El costo de la apuesta es 5 fichas.
+        </p>
+        <p>
+        	<h4>Premios</h4>
+        </p>
+        <p>
+        	- 4 aciertos: 20 fichas
+        </p>
+        <p>
+        	- 5 aciertos:  300 fichas
+        </p>
+        <p>
+        	- 6 aciertos: 3000 fichas
+        </p>
+	</div>
+</div>
+</div>
+</div>	
+
+
+
+			
