@@ -1,7 +1,58 @@
-<h1> Apuestas </h1>
-<ol >
-  <%= 
-  if @gambles
-	  render @gambles 
-  end %>
-</ol>
+
+
+<div class="row" style="padding-left:20px">
+
+	<div class="col-md-6">
+		
+		<div class="row" style="color:white">
+			<div class="col-md-4">
+				<h1>Apuestas</h1>
+			</div>			
+		</div>	
+		<div class="panel">
+			<table class="table table-bordered  table-condensed ">
+				<thead style="background: darkgray">
+					<th>Fecha</th>
+					<th>Numeros Elegidos</th>
+					<th>Numeros Sorteados</th>
+					<th>Ganancia</th>
+				</thead>
+			  	<% @gambles.each do |gamble| %>
+				  	<tbdoy>
+				  		<tr>
+				  		
+								  <td>
+								  	<%= gamble.created_at %> 
+								  </td>
+								  <td>
+								  	<%= gamble.firstChosen %>, 
+								  	<%= gamble.secondChosen %>, 
+								  	<%= gamble.thirdChosen %>, 
+								  	<%= gamble.fourthChosen %>,
+								  	<%= gamble.fifthChosen %>
+									</td>
+									<td>
+									  <%= gamble.firstRaffled %>,
+									  <%= gamble.secondRaffled %>,
+									  <%= gamble.thirdRaffled %>,
+									  <%= gamble.fourthRaffled %>,
+									  <%= gamble.fifthRaffled %>
+									</td>
+ 									<td>
+ 									  <%= gamble.profit %>
+ 									</td>
+				  		</tr>
+				  		
+				  	</tbody>
+			  	<% end %>
+			</table>
+		</div>
+	</div>
+</div>
+<div class="row" style="padding-left:20px">
+	<div class="col-md-12">
+		<a href="/lottery_selection" class="btn btn-primary">Apostar</a>
+
+	</div>
+
+</div>
