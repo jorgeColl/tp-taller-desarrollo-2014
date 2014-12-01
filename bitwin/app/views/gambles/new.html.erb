@@ -1,40 +1,81 @@
-This is the new gamble form 
+<div class="row" style="margin: 10px;">
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-body">      
+        <h3 style= "color: gold;"><strong>Haga su apuesta </strong></h3>
+        <%= form_for [@gamble.user, @gamble] do |f| %>
+         <div class="row">
+            <div class="col-md-4">
+              <%= f.label :firstChosen, "Elija el primer numero" %>
+             <%= f.text_field :firstChosen, class: 'form-control' %>              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <%= f.label :secondChosen, "Elija el segundo numero" %>
+              <%= f.text_field :secondChosen, class: "form-control" %>
+              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <%= f.label :thirdChosen, "Elija el tercer numero" %>
+              <%= f.text_field :thirdChosen,  class: 'form-control' %>              
+            </div>
+          </div>
+         <div class="row">
+           <div class="col-md-4">
+              <%= f.label :fourthChosen, "Elija el cuarto numero" %>
+              <%= f.text_field :fourthChosen, class: 'form-control' %>             
+           </div>
+         </div>
+          <div class="row">
+            <div class="col-md-4">
+              <%= f.label :fifthChosen, "Elija el quiento numero" %>
+              <%= f.text_field :fifthChosen, class: 'form-control' %>              
+            </div>
+          </div>
+         
+          Costo de la apuesta = 
+          <%= f.label :cost, "15" %> btc
+          </br>
+          <%= f.submit "Jugar ya!",class: 'btn btn-primary' %>
+        <% end %>
+      </div>  
+    </div>
+  </div>
 
-<%= form_for [@gamble.user, @gamble] do |f| %>
-  <%= @user.nickname %> </br>
-  <%= f.label :firstChosen, "Elija el primer numero" %>
-  <%= f.text_field :firstChosen %>
-  </br>
-  <%= f.label :secondChosen, "Elija el segundo numero" %>
-  <%= f.text_field :secondChosen %>
-  </br>
-  <%= f.label :thirdChosen, "Elija el tercer numero" %>
-  <%= f.text_field :thirdChosen %>
-  </br>
-  <%= f.label :fourthChosen, "Elija el cuarto numero" %>
-  <%= f.text_field :fourthChosen %>
-  </br>
-  <%= f.label :fifthChosen, "Elija el quiento numero" %>
-  <%= f.text_field :fifthChosen %>
-  </br>
-  Costo de la apuesta = 
-  <%= f.label :cost, "15" %> btc
-  </br>
-  <%= f.submit "Jugar ya!" %>
-<% end %>
+</div>
 
 
-
-
-  <h1 style= "color: white;"> Numeros Sorteados Anterirormente: </h1>
-<% @gambleAll.each do |gam| %>     
-<br>
-   <%= gam.firstRaffled %>,
-  <%= gam.secondRaffled %>,
-  <%= gam.thirdRaffled %>,
-  <%= gam.fourthRaffled %>,
-  <%= gam.fifthRaffled %>
-
+<div class="row" style="margin: 10px;">
   
-                 
-<% end %>
+  <div class="col-md-6">
+    
+    <div class="panel">
+      <h3> Numeros Sorteados Anteriormente: </h3>
+      <table class="table table-bordered  table-condensed ">
+        <thead style="background: gold">
+          <th>Fecha</th>          
+          <th>Numeros Sorteados</th>         
+        </thead>
+        <% @gambleAll.each do |gam| %>     
+          <tbdoy>
+            <tr>  
+            <td><%= gam.created_at %> </td>            
+              <td>
+                  <%= gam.firstRaffled %>-
+                  <%= gam.secondRaffled %>-
+                  <%= gam.thirdRaffled %>-
+                  <%= gam.fourthRaffled %>-
+                  <%= gam.fifthRaffled %>
+              </td>                  
+            </tr>              
+          </tbody>
+        <% end %>
+      </table>
+    </div>
+    
+  </div>
+</div>
+
