@@ -99278,3 +99278,17 @@ Processing by GamblesController#new as HTML
   [1m[35mGamble Load (0.2ms)[0m  SELECT "gambles".* FROM "gambles"   ORDER BY created_at DESC
   Rendered gambles/new.html.erb within layouts/application (2.2ms)
 Completed 200 OK in 179ms (Views: 175.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-01 12:44:38 -0300
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1[0m
+Completed 200 OK in 173ms (Views: 172.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/lottery_selection" for 127.0.0.1 at 2014-12-01 12:44:40 -0300
+Processing by StaticPagesController#lottery_selection as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3 LIMIT 1
+  Rendered static_pages/lottery_selection.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 121ms (Views: 120.3ms | ActiveRecord: 0.2ms)
