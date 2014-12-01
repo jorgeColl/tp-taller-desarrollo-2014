@@ -7,16 +7,20 @@ class GamblesController < ApplicationController
     @user = User.find_by(id: params[:user_id])
     if @user
       @gambles = @user.gambles
+      @gambleAll = Gamble.all
     end
   end
+
   def new
       @user = User.find_by(id: params[:user_id])
       @gambleAll = Gamble.all
       @gamble = @user.gambles.build
   end
+
   def create
     @user = User.find_by(id: params[:user_id])
     price = 15
+    @gambleAll = Gamble.all
     if @user.coins >= price
       @gamble = @user.gambles.create(gamble_params)
       @gamble.cost = 0
