@@ -22,3 +22,19 @@ This is the new gamble form
   </br>
   <%= f.submit "Jugar ya!" %>
 <% end %>
+
+
+
+
+  <h1> Numeros Sorteados Anterirormente: </h1>
+<% @gambleAll.each do |gam| %>     
+<br>
+   <%= gam.firstRaffled %>,
+  <%= gam.secondRaffled %>,
+  <%= gam.thirdRaffled %>,
+  <%= gam.fourthRaffled %>,
+  <%= gam.fifthRaffled %>
+
+  
+                 
+<% end %>
