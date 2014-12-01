@@ -11,6 +11,7 @@ class GamblesController < ApplicationController
   end
   def new
       @user = User.find_by(id: params[:user_id])
+      @gambleAll = Gamble.all
       @gamble = @user.gambles.build
   end
   def create
