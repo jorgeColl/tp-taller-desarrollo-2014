@@ -1,18 +1,38 @@
-<h1> Numeros seleccionados: </h1>
-  <%= @gamble.created_at %> - Numeros Elegidos: 
-  <%= @gamble.firstChosen %>,
-  <%= @gamble.secondChosen %>,
-  <%= @gamble.thirdChosen %>,
-  <%= @gamble.fourthChosen %>,
-  <%= @gamble.fifthChosen %>
+<style type="">
 
-<h1> Numeros sorteados: </h1>
-  <%= @gamble.firstRaffled %>,
-  <%= @gamble.secondRaffled %>,
-  <%= @gamble.thirdRaffled %>,
-  <%= @gamble.fourthRaffled %>,
-  <%= @gamble.fifthRaffled %>
+.margin{
+  margin: 5px;
+}
+</style>
 
-  <h1> Ganancia </h1>  
-  <%= @gamble.profit %>
+<div class="row" style="margin: 10px;">
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-body"> 
+        <h3><strong>Resultados</strong></h3>    
+        <div class="row margin" >
+          <h4><strong>Numeros seleccionados</strong></h4>
+            <%= @gamble.firstChosen %> -
+            <%= @gamble.secondChosen %> -
+            <%= @gamble.thirdChosen %> -
+            <%= @gamble.fourthChosen %> -
+            <%= @gamble.fifthChosen %>
+        </div>
+        <div class="row margin">
+          <h4><strong>Numeros sorteados</strong></h4>
+          <%= @gamble.firstRaffled %>-
+          <%= @gamble.secondRaffled %>-
+          <%= @gamble.thirdRaffled %>-
+          <%= @gamble.fourthRaffled %>-
+          <%= @gamble.fifthRaffled %>
+        </div>
+        <div class="row margin">
+           <h4><strong>Ganancia</strong></h4>  
+           <%= @gamble.profit %>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
 
