@@ -6,7 +6,7 @@
 
 .imgPublicidad{
 	width: 100%!important; 
-	height: 600px!important;
+	height: 650px!important;
 	border-radius:15px;
 }
 
@@ -63,7 +63,7 @@
 										Loteria Gold
 									</h3>
 									<p>
-										<a class="btn btn-primary" href="#" data-toggle="modal" data-target="#aModal" onclick="changeModalDefault()">Más informacíon</a> <a class="btn" href="#"> </a>
+										<a class="btn btn-primary" href="#" data-toggle="modal" data-target="#GoldModal" onclick="changeModalDefault()">Más informacíon</a> <a class="btn" href="#"> </a>
 									</p>
 									<p>
 										<a class="btn btn-primary" href="/users/<%= currentUser.id %>/gambles/new">Jugar</a> <a class="btn" href="#"> </a>
@@ -79,10 +79,10 @@
 										Loteria Silver
 									</h3>
 									<p>
-										<a class="btn btn-primary" href="#">Más informacíon</a> <a class="btn" href="#"> </a>
+										<a class="btn btn-primary" href="#" data-toggle="modal" data-target="#SilverModal" onclick="changeModalDefault()">Más informacíon</a> <a class="btn" href="#"> </a>
 									</p>
 									<p>
-										<a class="btn btn-primary" href="#">Jugar</a> <a class="btn" href="#"> </a>
+										<a class="btn btn-primary" href="/users/<%= currentUser.id %>/gambles/new">Jugar</a> <a class="btn" href="#"> </a>
 									</p>
 								</div>
 							</div>
@@ -95,10 +95,10 @@
 										Loteria Bronze
 									</h3>
 									<p>
-										<a class="btn btn-primary" href="#">Más informacíon</a> <a class="btn" href="#"> </a>
+										<a class="btn btn-primary" href="#" data-toggle="modal" data-target="#BronzeModal" onclick="changeModalDefault()">Más informacíon</a> <a class="btn" href="#"> </a>
 									</p>
 									<p>
-										<a class="btn btn-primary" href="#">Jugar</a> <a class="btn" href="#"> </a>
+										<a class="btn btn-primary" href="/users/<%= currentUser.id %>/gambles/new">Jugar</a> <a class="btn" href="#"> </a>
 									</p>
 								</div>
 							</div>
@@ -110,7 +110,7 @@
 						</div>
 					</div>
 					<div class="item">
-						<img class="imgPublicidadFija" src="images/hsbc.jpeg" alt="" >
+						<a href="http://www.us.hsbc.com/1/2/home/personal-banking" target="blank_"><img class="imgPublicidadFija" src="images/hsbc.jpeg" alt="" ></a>
 					</div>
 				</div>
 			</div>
@@ -158,7 +158,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="aModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="GoldModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -198,6 +198,86 @@
 </div>
 </div>	
 
+<div class="modal fade" id="SilverModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 style="color: Silver" class="modal-title" id="myModalLabel">Loteria Silver</h4>
+      </div>
+      <div id="modalRules" class="modal-body">
+        <p>
+        	- Se deben elegir 6 numeros entre 0 y 99. No pueden haber nùmeros repetidos.
+        </p>
+        <p>
+        	- El costo de la apuesta es 3 fichas.
+        </p>
+        <p>
+        	<h4>Premios</h4>
+        </p>
+         <p>
+        	- 1 acierto: 3 fichas
+        </p>
+        <p>
+        	- 2 aciertos:  23 fichas
+        </p>
+        <p>
+        	- 3 aciertos: 300 fichas
+        </p>
+        <p>
+        	- 4 aciertos: 15K fichas
+        </p>
+        <p>
+        	- 5 aciertos:  1.8M fichas
+        </p>
+        <p>
+        	- 6 aciertos: 1000M fichas
+        </p>
+	</div>
+</div>
+</div>
+</div>	
+
+
+<div class="modal fade" id="BronzeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 style="color: #CD7F32;" class="modal-title" id="myModalLabel">Loteria Bronze</h4>
+      </div>
+      <div id="modalRules" class="modal-body">
+        <p>
+        	- Se deben elegir 6 numeros entre 0 y 99. No pueden haber nùmeros repetidos.
+        </p>
+        <p>
+        	- El costo de la apuesta es 1 ficha.
+        </p>
+        <p>
+        	<h4>Premios</h4>
+        </p>
+         <p>
+        	- 1 acierto: 1 ficha
+        </p>
+        <p>
+        	- 2 aciertos:  7 fichas
+        </p>
+        <p>
+        	- 3 aciertos: 70 fichas
+        </p>
+        <p>
+        	- 4 aciertos: 700 fichas
+        </p>
+        <p>
+        	- 5 aciertos:  7K fichas
+        </p>
+        <p>
+        	- 6 aciertos: 7M fichas
+        </p>
+	</div>
+</div>
+</div>
+</div>	
 
 
 			
