@@ -6,32 +6,32 @@
         <%= form_for [@gamble.user, @gamble] do |f| %>
          <div class="row">
             <div class="col-md-4">
-              <%= f.label :firstChosen, "Elija el primer numero" %>
+              <%= f.label :firstChosen, "Elija el primer número" %>
              <%= f.text_field :firstChosen, class: 'form-control' %>              
             </div>
           </div>
           <div class="row">
             <div class="col-md-4">
-              <%= f.label :secondChosen, "Elija el segundo numero" %>
+              <%= f.label :secondChosen, "Elija el segundo número" %>
               <%= f.text_field :secondChosen, class: "form-control" %>
               
             </div>
           </div>
           <div class="row">
             <div class="col-md-4">
-              <%= f.label :thirdChosen, "Elija el tercer numero" %>
+              <%= f.label :thirdChosen, "Elija el tercer número" %>
               <%= f.text_field :thirdChosen,  class: 'form-control' %>              
             </div>
           </div>
          <div class="row">
            <div class="col-md-4">
-              <%= f.label :fourthChosen, "Elija el cuarto numero" %>
+              <%= f.label :fourthChosen, "Elija el cuarto número" %>
               <%= f.text_field :fourthChosen, class: 'form-control' %>             
            </div>
          </div>
           <div class="row">
             <div class="col-md-4">
-              <%= f.label :fifthChosen, "Elija el quiento numero" %>
+              <%= f.label :fifthChosen, "Elija el quinto número" %>
               <%= f.text_field :fifthChosen, class: 'form-control' %>              
             </div>
           </div>
@@ -55,7 +55,7 @@
       <table class="table table-bordered  table-condensed ">
         <thead style="background: gold">
           <th>Fecha</th>          
-          <th>Numeros Sorteados</th>         
+          <th>Números Sorteados</th>         
         </thead>
         <% @gambleAll.each do |gam| %>     
           <tbdoy>
