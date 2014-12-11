@@ -1,21 +1,45 @@
-<!--This is the sign up form 
-
-<%= form_for(@user) do |f| %>
-  <%= f.label :nickname, "Nombre de usuario" %>
-  <%= f.text_field :nickname %>
-  </br>
-  <%= f.label :mail %>
-  <%= f.text_field :mail %>
-  </br>
-  <%= f.label :walletNmb, "Nro Wallet" %>
-  <%= f.text_field :walletNmb %>
-  </br>
-  <%= f.label :password, "Contraseña" %>
-  <%= f.password_field :password %>
-  </br>
-  <%= f.label :password_confirmation, "Confirmacion" %>
-  <%= f.password_field :password_confirmation %>
-  </br>
-  <%= f.submit "Crear cuenta" %>
-<% end %>
-!-->
+<div class="row" style="margin: 10px;">
+  <div class="col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-body">      
+        <h3 style= "color: gold;"><strong>Hubo un error Verifique los campos!.</strong></h3>        
+        <%=  form_for(:user, url: "/users" ) do |f|%>
+         <div class="row">
+            <div class="col-md-4">
+              <%= f.label :nickname, "Nombre de usuario" %>
+             <%= f.text_field :nickname, class: 'form-control' %>              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <%= f.label :mail %>
+              <%= f.text_field :mail, class: "form-control" %>
+              
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <%= f.label :walletNmb, "Nro Wallet" %>
+              <%= f.text_field :walletNmb,  class: 'form-control' %>              
+            </div>
+          </div>
+         <div class="row">
+           <div class="col-md-4">
+              <%= f.label :password, "Contraseña" %>
+              <%=  f.password_field :password ,class: 'form-control' %>             
+           </div>
+         </div>
+          <div class="row">
+            <div class="col-md-4">
+               <%= f.label :password_confirmation, "Confirmacion" %>
+              <%= f.password_field :password_confirmation, class: 'form-control' %>              
+            </div>
+          </div>
+         
+          </br>
+          <%= f.submit "Crear Cuenta",class: 'btn btn-primary' %>
+        <% end %>
+      </div>  
+    </div>
+  </div>
+</div>

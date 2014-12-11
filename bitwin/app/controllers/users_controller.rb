@@ -26,7 +26,7 @@ class UsersController < ApplicationController
         login @user
         redirect_to @user
   	else
-  	  render 'new'
+  	  redirect_to root_path
   	end
   end
 

@@ -36,7 +36,8 @@ class GamblesController < ApplicationController
           @user.update_attribute('coins',coins) 
           redirect_to([@gamble.user, @gamble])
       else
-          render 'new'
+          @isError = true
+          redirect_to new_user_gamble_path
       end
     else
       redirect_to error_path
